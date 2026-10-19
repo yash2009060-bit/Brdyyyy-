@@ -1,0 +1,415 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Riyahhhhh 🎀</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Trebuchet MS", sans-serif;
+    background: #ffe0ed;
+    color: #a83268;
+    text-align: center;
+}
+
+.page {
+    min-height: 100vh;
+    padding: 30px 15px;
+}
+
+#page1 {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(135deg, #ffc6df, #ffe5ef, #ffb5d5);
+}
+
+#page2 {
+    display: none;
+    background: linear-gradient(180deg, #ffe1ed, #fff0f5, #ffd5e5);
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    max-width: 550px;
+    width: 95%;
+    padding: 30px 15px;
+    background: #ffffff85;
+    border: 3px solid white;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px #e86b9a44;
+}
+
+h1 {
+    color: #f52e83;
+    font-size: clamp(32px, 8vw, 52px);
+    text-shadow: 2px 3px white;
+}
+
+button {
+    border: 3px solid white;
+    background: #ff4e96;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 30px;
+    border-radius: 40px;
+    cursor: pointer;
+    box-shadow: 0 5px 0 #d92e76;
+    margin-top: 15px;
+}
+
+button:active {
+    transform: translateY(4px);
+    box-shadow: none;
+}
+
+.floating {
+    position: absolute;
+    font-size: 32px;
+    animation: float 3s ease-in-out infinite alternate;
+    pointer-events: none;
+}
+
+@keyframes float {
+    to { transform: translateY(-15px) rotate(12deg); }
+}
+
+.subtitle {
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.page-title {
+    font-size: clamp(30px, 7vw, 43px);
+    color: #ed3986;
+    text-shadow: 2px 2px white;
+    margin: 10px 0;
+}
+
+.intro {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 28px;
+}
+
+/* EIGHT PHOTO COLLAGE */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    max-width: 700px;
+    margin: 0 auto 35px;
+}
+
+.photo-card {
+    min-width: 0;
+    background: white;
+    padding: 8px;
+    border: 3px dashed #ff83b5;
+    border-radius: 18px;
+    box-shadow: 0 5px 12px #d86c9a30;
+    transform: rotate(-1deg);
+}
+
+.photo-card:nth-child(even) {
+    transform: rotate(1.5deg);
+}
+
+.photo-card img {
+    display: block;
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.stickers {
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding: 5px 0 2px;
+}
+
+/* FRIENDSHIP MESSAGE */
+
+.message {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 25px 20px;
+    background: #ffffffd9;
+    border: 3px solid #ffafd0;
+    border-radius: 25px;
+    box-shadow: 0 8px 22px #dc75a52a;
+    text-align: left;
+    line-height: 1.9;
+    font-size: 16px;
+    overflow-wrap: anywhere;
+}
+
+.message h2 {
+    text-align: center;
+    color: #ef438a;
+    line-height: 1.4;
+}
+
+.footer {
+    margin: 25px 0 10px;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+@media (max-width: 380px) {
+    .gallery { gap: 9px; }
+    .photo-card img { height: 145px; }
+    .stickers { font-size: 16px; letter-spacing: 0; }
+    .message { padding: 18px 14px; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- SONG -->
+<audio id="birthdaySong" src="song.mp3" loop preload="auto"></audio>
+
+<!-- PAGE ONE: FRONT PAGE -->
+<section id="page1" class="page">
+
+    <span class="floating" style="top:5%;left:5%">🐷</span>
+    <span class="floating" style="top:15%;right:8%">🌻</span>
+    <span class="floating" style="top:40%;left:3%">🎀</span>
+    <span class="floating" style="bottom:10%;left:8%">🐽</span>
+    <span class="floating" style="bottom:8%;right:5%">🌻</span>
+    <span class="floating" style="top:65%;right:4%">🐷</span>
+    <span class="floating" style="top:4%;left:45%">💗</span>
+    <span class="floating" style="bottom:3%;left:45%">🎀</span>
+    <span class="floating" style="top:25%;left:17%">🌻</span>
+    <span class="floating" style="bottom:25%;right:13%">🐷</span>
+
+    <div class="content">
+        <div style="font-size:40px">🎀 🌻 🐷 💗</div>
+
+        <h1>
+            HAPPYYYY<br>
+            BIRTHDAYYY<br>
+            RIYAHHHH<br>
+            URFF BANDARIYAHHH!!
+        </h1>
+
+        <p class="subtitle">
+            Aaj meri bandariya ka birthdayyy 😭🐷<br>
+            Tere liye ek chhota sa surpriseee 💗🌻
+        </p>
+
+        <div style="font-size:35px">🐵 🌻 🐷 🎀</div>
+
+        <button id="startBtn" onclick="openSurprise()">
+            CLICK ME 💗
+        </button>
+
+        <p id="status">A little surprise awaits you... 🎁</p>
+    </div>
+</section>
+
+<!-- PAGE TWO: PHOTOS AND MESSAGE -->
+<section id="page2" class="page">
+
+    <div style="font-size:35px">🐵 🌻 🎀 🐷</div>
+
+    <h1 class="page-title">
+        HAPPY BIRTHDAY<br>
+        RIYAHHH 💗
+    </h1>
+
+    <p class="intro">
+        Meri favourite bandariya ke liyeee 😭🌻<br>
+        8 photos, dher saari memories aur ek chhota sa message 💌
+    </p>
+
+    <!-- PHOTO 1 -->
+    <div class="gallery">
+
+        <div class="photo-card">
+            <img src="photo1.jpg" alt="Memory 1">
+            <div class="stickers">🐵 🐷 🌻 🎀</div>
+        </div>
+
+        <!-- PHOTO 2 -->
+        <div class="photo-card">
+            <img src="photo2.jpg" alt="Memory 2">
+            <div class="stickers">🎀 🌻 🐷 🐵</div>
+        </div>
+
+        <!-- PHOTO 3 -->
+        <div class="photo-card">
+            <img src="photo3.jpg" alt="Memory 3">
+            <div class="stickers">🐷 🎀 🐵 🌻</div>
+        </div>
+
+        <!-- PHOTO 4 -->
+        <div class="photo-card">
+            <img src="photo4.jpg" alt="Memory 4">
+            <div class="stickers">🌻 🐵 🎀 🐷</div>
+        </div>
+
+        <!-- PHOTO 5 -->
+        <div class="photo-card">
+            <img src="photo5.jpg" alt="Memory 5">
+            <div class="stickers">🐵 🐷 🌻 🎀</div>
+        </div>
+
+        <!-- PHOTO 6 -->
+        <div class="photo-card">
+            <img src="photo6.jpg" alt="Memory 6">
+            <div class="stickers">🎀 🐷 🌻 🐵</div>
+        </div>
+
+        <!-- PHOTO 7 -->
+        <div class="photo-card">
+            <img src="photo7.jpg" alt="Memory 7">
+            <div class="stickers">🐵 🐷 🌻 🎀</div>
+        </div>
+
+        <!-- PHOTO 8 -->
+        <div class="photo-card">
+            <img src="photo8.jpg" alt="Memory 8">
+            <div class="stickers">🌻 🎀 🐷 🐵</div>
+        </div>
+
+    </div>
+
+    <!-- EMOTIONAL BUT FRIENDSHIP-TYPE PARAGRAPH -->
+
+    <div class="message">
+
+        <h2>💗 A little message for my BSF 🌻</h2>
+
+        Happyyyy birthdayyy Riyahhhhh 😭💗🎀
+
+        <br><br>
+
+        Yrr sach batau toh mujhe samajh hi nhi aa rha ki
+        kaha se start kru aur kya kya likhu 😭😂 but aaj tera
+        birthday h toh tere liye kuch toh special likhna bnta h.Ndd teri sari wishes puri ho 
+    
+
+        <br><br>
+
+        Yrr tu genuinely meri life mein mile hue best persons
+        mein se ek h. Matlab kabhi kabhi sochta hu ki online
+        kisi se milke bhi itna acha bond ban skta h, ye tere
+        se hi pta chla 😂💗. Tu sirf meri BSF nhi h, tu woh
+        person h jisse mein bina zyada soche apni baatein share
+        kr skta hu aur jiske saath bakchodi krke mood bhi thik
+        ho jata h 😭🐷.
+
+        <br><br>
+
+        Teri pagalpanti alag level ki h madam 😂🐵 aur tu jitna
+        mujhe pareshan krti h na uska hisaab alag se bnana
+        pdega. But honestly, teri yehi silly si baatein aur tera
+        nature hi tujhe special bnata h. Hamesha aise hi rehna,
+        apni smile maintain rkhna aur apni cute si bakchodi
+        kabhi band mt krna 😭🌻.
+
+        <br><br>
+
+        Ek baat aur, life mein hamesha sab kuch perfect nhi
+        hota. Kabhi bura din hoga, kabhi mood off hoga, kabhi
+        lagega ki kuch bhi sahi nhi chl rha. But I hope tu
+        hamesha yaad rkhe ki tujhe har cheez akele handle
+        krne ki zarurat nhi h. Apne logon se baat kiya kr,
+        khud ka dhyan rkha kr aur apni happiness ko bhi
+        importance diya kr. Teri khushi matter krti h yrr 💗.
+
+        <br><br>
+
+        I genuinely wish ki tujhe life mein bohot saari
+        happiness mile, tere saare dreams pure ho, tu jo bhi
+        achieve krna chahti h usmein successful ho aur tujhe
+        hamesha aise log mile jo teri respect krein aur teri
+        value samjhein. Tujhe life mein bohot aage jaate hue
+        dekhna h mujhe, aur ek din jab tu apni achievements
+        ke baare mein btayegi na toh mein full proud feel
+        krunga 😭🫶🏻.
+
+        <br><br>
+
+        Thank you meri life mein aane ke liye, meri bakwaas
+        sunne ke liye, mujhe samajhne ke liye aur meri itni
+        achi dost hone ke liye. Ho skta h mein hamesha
+        properly express na kr pau ki mere liye meri
+        friendship kitni important h, but that doesn't mean
+        ki mein value nhi krta. I really do, bohot zyada 💗.
+
+        <br><br>
+
+        Aur haan madam, birthday h iska mtlb ye nhi ki
+        ab tu mujhe tang krna band kr degi 😂🐷. Teri duty
+        lifetime ki h, samjhi? Apni friendship mein hasi
+        mazaak, random baatein aur ye pagalpan aise hi
+        chalta rehna chahiye. Bas dono grow krein, apne
+        dreams pure krein aur hamesha ek dusre ke liye
+        achi wishes rkhein. 🫂
+
+        <br><br>
+
+        Once again, happiest birthdayyy to my favourite
+        bandariya and best friendddd 😭💗🌻. Bhagwan kre
+        tera ye saal bohot acha jaye, tu bohot khush rhe,
+        healthy rhe, aur tere face pe ye smile hamesha
+        bani rhe.
+
+        <br><br>
+
+        <b>Enjoy your day to the fullest, Riyahhh! 🎂🎀</b>
+
+        <br><br>
+
+        Tera BSF jo tujhe bohot tang krta h 😂🐷💗
+
+    </div>
+
+    <div class="footer">
+        🐵 Best Friends • 🌻 Best Memories • 🎀 Forever Special
+        <br>
+        Made specially for Riyahhh 💗
+    </div>
+
+</section>
+
+<script>
+function openSurprise() {
+    const song = document.getElementById("birthdaySong");
+    const status = document.getElementById("status");
+
+    // Open second page
+    document.getElementById("page1").style.display = "none";
+    document.getElementById("page2").style.display = "block";
+
+    window.scrollTo(0, 0);
+
+    // Play song when button is pressed
+    song.play().then(() => {
+        status.textContent = "HAPPY BIRTHDAYYY RIYAHHH!! 🎶🌻💗";
+    }).catch(() => {
+        status.textContent =
+            "Music nahi chala? Check karo song.mp3 upload hai ya nahi!";
+    });
+}
+</script>
+
+</body>
+</html>
